@@ -9,7 +9,7 @@ def solution (num1,num2):
 
 from nose.tools import assert_equal
 
-
+# We define a class
 class SolutionTest(object):
 
     def test(self,sol):
