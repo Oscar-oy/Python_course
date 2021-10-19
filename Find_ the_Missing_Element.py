@@ -38,7 +38,7 @@ def finder(arr1,arr2):
             return num1
     return arr1[-1]
     
-
+#A solution using collection's dictionary
 
 import collections
 
@@ -46,7 +46,7 @@ def finder2(arr1, arr2):
     d = collections.defaultdict(int)
 
     for num in arr2:
-        d[num]+=1
+        d[num]+=1 # we are avoiding an if
 
     for num in arr1:
         if d[num] == 0:
@@ -56,6 +56,23 @@ def finder2(arr1, arr2):
 arr1 = [5,5,7,7]
 arr2 = [5,7,7]
 print(finder2(arr1,arr2))
+
+#Another solution using exclusive or. This is the cleverst one
+
+def finder3 (arr1,arr2):
+    result =0
+    #Perform an XOR betwenn the numbers in the arrays
+    for num in arr1+arr2:
+        result ^= num
+        print (result)
+    return result
+
+arr1 = [5,5,7,7]
+arr2 = [5,7,7]
+print(finder3(arr1,arr2))
+
+
+
 
 
 
