@@ -1,4 +1,7 @@
+#My solution
+
 def pair_sum(arr,k):
+    arr = sorted(arr)
     cont = 0
     cont2 = 0
     for num in arr:
@@ -17,6 +20,7 @@ pair_sum(arr,k)
 """
 RUN THIS CELL TO TEST YOUR SOLUTION
 """
+
 from nose.tools import assert_equal
 
 class TestPair(object):
