@@ -52,7 +52,7 @@ def large_cont_sum(arr):
 
 print(large_cont_sum([1,2,-1,3,4,10,10,-10,-1]))
 #print(large_cont_sum([-1,1]))
-print(large_cont_sum([3,1,-1,-12,20,1,-12]))
+print(large_cont_sum([1,2,-5,20,-12,30]))
 
 
 from nose.tools import assert_equal
