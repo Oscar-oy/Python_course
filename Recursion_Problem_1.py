@@ -16,3 +16,18 @@ def rec_sum(n):
     return 0
 
 print(rec_sum(4))
+
+#Course solution
+def rec_sum1(n):
+    #Base Case
+    if n == 0:
+        return 0
+
+    #Recursion
+    else:
+        return n + rec_sum(n-1)
+
+print(rec_sum(4))
+
+
+
