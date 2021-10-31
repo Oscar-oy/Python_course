@@ -7,15 +7,15 @@ We are using the factorial problem like an example of memoization
 
 #Create cache for known results
 factorial_memo = {}
-def factorial(k):
+def factorial1(k):
     if k <2:
         return 1
 
     if not k in factorial_memo:
-        factorial_memo[k]=k*factorial(k-1)
+        factorial_memo[k]=k*factorial1(k-1)
     return factorial_memo[k]
 
-print(factorial(4))
+print(factorial1(4))
 #We are now able to increase the efficiency of this function by remembering old results!
 
 '''
@@ -39,5 +39,7 @@ def factorial(k):
 
 
 factorial = Memoize(factorial)
+
+print(factorial(4))
 
 
