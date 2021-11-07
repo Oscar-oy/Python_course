@@ -85,6 +85,11 @@ def inorder(tree):
         inorder(tree.getLeftChild())
         print(tree.getRootVal())
         inorder(tree.getRightChild())
-        
 
 inorder(r)
+        
+
+
+'''
+We just used the most frecuent ways to read a tree
+'''
