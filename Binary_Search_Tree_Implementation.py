@@ -235,7 +235,10 @@ mytree[2]="at"
 
 print(mytree[6])
 print(mytree[2])
-        
+print(len(mytree))
+print(mytree[20])
+print(2 in mytree)
+
 
 
     
