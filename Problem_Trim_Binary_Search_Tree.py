@@ -10,7 +10,7 @@ We should remove all the nodes whose value is not between min and max.
 '''
 
 
-
+# My solution
 def trimBST(tree,minVal,maxVal):
     
      tree.left # LeftChild
@@ -37,7 +37,26 @@ def trimBST(tree,minVal,maxVal):
             trimBST(tree.right,minVal,maxVal)
 
 
+# Course solution
 
+def trimbst(tree,minVal,maxVal):
+
+    if not tree:
+        return
+    
+    tree.left = trimbst(tree.left,minVal,maxVal)
+    tree.right = trimbst(tree.right,minVal,maxVal)
+
+    if minVal <= tree.val <= maxVal:
+        return tree
+    
+    if tree.val < minVal:
+        return tree.right
+
+    if tree.val > maxVal:
+        return tree.left
+
+        
 
 
 
