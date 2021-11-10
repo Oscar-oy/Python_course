@@ -47,7 +47,9 @@ def levelOrderPrint(tree):
 
    
 
-    pass
+'''
+We should notice that we are using postorder traversal to read the tree
+'''
 
 tree = Node(1)
 tree.left = Node(2)
