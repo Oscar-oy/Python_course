@@ -26,3 +26,15 @@ def dfs(graph,start):
     return visited
 
 print(dfs(graph,'A'))
+
+
+def dfs2(graph,start,visited = None):
+    if visited is None:
+        visited = set()
+
+    visited.add(start)
+    for nxt in graph[start]- visited:
+        dfs2(graph,nxt,visited)
+    return visited
+
+print(dfs2(graph, 'A')) 
